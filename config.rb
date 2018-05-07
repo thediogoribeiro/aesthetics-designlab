@@ -1,6 +1,8 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
+activate :i18n
+
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
@@ -27,6 +29,11 @@ page '/*.txt', layout: false
 #   },
 # )
 
+# Reload the browser automatically whenever files change
+configure :development do
+  activate :livereload
+end
+
 # Helpers
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
@@ -40,7 +47,23 @@ page '/*.txt', layout: false
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
+configure :build do
+  # Minify CSS on build
+  activate :minify_css
+
+  # Minify Javascript on build
+  activate :minify_javascript
+
+  # Minify HTML on build
+  activate :minify_html
+
+  # Optimise Images on build
+  activate :imageoptim
+
+end
+
+# Deployment to production with 'middleman-s3_sync'
+activate :s3_sync do |s3_sync|
+  s3_sync.region                = 'eu-west-1'
+  s3_sync.prefer_gzip           = true
+end
