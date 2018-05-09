@@ -1,6 +1,5 @@
 #navbar
 	background-color: $black
-
 	.nav__content
 		display: grid
 		grid-template-rows: 1fr
@@ -26,5 +25,14 @@
 				grid-row: 1
 				grid-column: 4 / 5
 				text-align: right
+			a
+				text-decoration: none
+				color: $white
+			.nav__work,
+			.nav__partners,
+			.nav__contacts
+				&:hover
+					a
+						color: $green
 
 			
