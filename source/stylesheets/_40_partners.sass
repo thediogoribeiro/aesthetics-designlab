@@ -1,0 +1,43 @@
+#partners
+	background-color: $white
+	//height: 50vh
+	.partners__content
+		.partners__title
+			h1
+				margin-bottom: 0px
+			hr
+				width: 50%
+				margin-left: 0
+		.partners__list
+			text-align: center
+			padding: 60px 0
+			display: grid
+			grid-template-rows: 1fr
+			grid-template-columns: 1fr 1fr 1fr
+			.partner--1
+				grid-row: 1
+				grid-column: 2 / 3
+				text-align: center
+				.partner__logo--1
+					img
+						height: 100%
+						width: 100%
+						padding: 40px 0
+				.partner__info--1
+					display: grid
+					grid-template-rows: 1fr
+					grid-template-columns: 1fr 1fr
+					.info__link--1
+						grid-row: 1
+						grid-column: 1 / 2
+						margin-right: 25px
+					.info__link--2
+						grid-row: 1
+						grid-column: 2 / 3
+						margin-left: 25px
+					&:hover
+						a
+							color: $dark-green
+					a
+						text-decoration: none
+						color: $black

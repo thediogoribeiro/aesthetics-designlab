@@ -1,8 +1,14 @@
 #partners
-	.partners__content
+	.partners__content.container
 		.partners__title
-		.partners__logo
+			h1.text--black PARCEIROS
+			hr.text--black
+		.partners__list
 			.partner--1
-			.partner--2
-			.partner--3
-			.partner--4
+				.partner__logo--1
+					=image_tag('pt2020.png')
+				.partner__info--1
+					.info__link--1
+						h4.text--black.button__black = link_to 'Guia', 'https://drive.google.com/open?id=1NPEaIZn8Ywjjkk-Jn4WsHcVbx4od-bSl'
+					.info__link--2
+						h4.text--black.button__black = link_to 'Projecto', 'https://drive.google.com/open?id=1ZcAZaW8_obtABeQcWs23gEqRw--PUEiR'
