@@ -5,14 +5,24 @@
 			display: grid
 			grid-template-rows: 1fr
 			grid-template-columns: 1fr 1fr
+			min-height: 315px
 			.work--text--1
 				grid-row: 1
 				grid-column: 1 / 2
+				padding: 0 20px 0 0
 				h5
 					margin: 0
 					padding: 0 0 40px 0
 					
-			.work__image--1
+			.work__video--1
 				grid-row: 1
 				grid-column: 2 / 3
 				text-align: center
+				padding: 20px 0 0 20px
+				width: auto
+				display: inline-block
+				iframe
+					height: 100% //56.25% // 315px
+					width: 100% //560px
+					max-width: 560px
+					border-style: none
