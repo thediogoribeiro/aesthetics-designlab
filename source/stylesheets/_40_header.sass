@@ -1,2 +1,14 @@
 #header
 	background-color: $grey
+	.container
+		display: grid
+		grid-template-rows: 1fr
+		grid-template-columns: 1fr 1fr 1fr
+		.header__content
+			grid-row: 1
+			grid-column: 2 / 3
+			.header__logo
+				text-align: center
+
+			.header__contact
+				text-align: center
