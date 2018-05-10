@@ -58,7 +58,7 @@ configure :build do
   activate :minify_html
 
   # Optimise Images on build
-  activate :imageoptim
+  # activate :imageoptim
 
 end
 
