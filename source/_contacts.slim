@@ -1,19 +1,29 @@
 #contacts
-	.contacts__content.container
-		.contacts__title
-			h2.text--black CONTACTOS
-		.contacts__list
-			.contacts__address
-				h4.text--white =link_to "Rua da Constituição, </br>Porta 656 </br>Porto", "https://www.google.pt/maps/search/Aesthetics+Design+Lab,+Rua+da+Constituicao+Porta+656+sala+211,+4200-194+Porto/@41.1622003,-8.608057,17z/data=!3m1!4b1"
-				br
-			.contacts__phone
-				h5.text--white =link_to "Telefone", "+351225400596", :class => "button__white"
-				br
-			.contacts__mobile
-				h5.text--white =link_to "Telemóvel", "+351965759477", :class => "button__white"
-				br
-			.contacts__email
-				h5.text--white =link_to "Email", "mailto:Adlaboratorio1@gmail.com", :class => "button__white"
-				br
-			.contacts__facebook
-				h5.text--white =link_to "Facebook", "https://facebook.com/expressoviagens", :class => "button__white"
+	.container
+		.contacts__content
+			.contacts__title
+				h3.text--white Contactos
+				hr
+			.contacts__list
+				.contacts__address
+					.address__icon
+						i.fas.fa-map-marker.fa-2x
+					.address__text
+						h4.text--white =link_to "Rua da Constituição, Porta 656 </br>Porto", "https://www.google.pt/maps/search/Aesthetics+Design+Lab,+Rua+da+Constituicao+Porta+656+sala+211,+4200-194+Porto/@41.1622003,-8.608057,17z/data=!3m1!4b1"
+				.contacts__mobile
+					.mobile__icon
+						i.fas.fa-phone-square.fa-2x
+					.mobile__text
+						h5.text--white =link_to "+351 965 759 477", "+351965759477"
+					br
+				.contacts__email
+					.email__icon
+						i.far.fa-envelope.fa-2x
+					.email__text
+						h5.text--white =link_to "Adlaboratorio1@gmail.com", "mailto:Adlaboratorio1@gmail.com"
+					br
+				.contacts__facebook
+					.facebook__icon
+						i.fab.fa-facebook.fa-2x
+					.facebook__text
+						h5.text--white =link_to "facebook.com/aestheticsDesignlab", "https://www.facebook.com/aestheticsDesignlab/"
